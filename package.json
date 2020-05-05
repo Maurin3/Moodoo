@@ -1,0 +1,23 @@
+{
+    "name": "moodoo",
+    "productName": "Moodoo",
+    "version": "1.0.0",
+    "description": "Desktop app for Odoo IM",
+    "repository": "https://github.com/Maurin3/Moodoo",
+    "main": "dist/app",
+    "license": "UNLICENSED",
+    "scripts": {
+        "build": "tsc",
+        "watch": "tsc -w",
+        "start": "tsc && electron ."
+    },
+    "devDependencies": {
+        "electron": "^7.2.3",
+        "jayson": "^3.3.0",
+        "tslint": "^5.19.0",
+        "typescript": "^3.7.4"
+    },
+    "dependencies": {
+        "tsc": "^1.20150623.0"
+    }
+}

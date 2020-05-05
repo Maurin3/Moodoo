@@ -1,0 +1,148 @@
+.layout {
+    display: flex;
+    height: 100%;
+}
+
+.layout > .conversation-list{
+    flex: none;
+    display: flex;
+    flex-direction: column;
+    width: 20rem;
+    position: relative;
+    color : var(--light-gray);
+    overflow-y: auto;
+}
+
+.layout > .conversation-panel{
+    position: relative;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    color: var(--body);
+    width: calc(100% - 20rem);
+}
+
+.date{
+    font-size: 0.75em;
+}
+
+.conversation-element{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 75px;
+    padding: 5%;
+}
+
+.conversation-element.active {
+    background-color: var(--odoo-dark);
+}
+
+.message-info{
+    padding-left: 10%;
+}
+
+.avatar, .conv-avatar{
+    width: 50px;
+    background-color: var(--light-gray);
+    border-radius: 100%; 
+}
+
+.conversation-element:hover{
+    background-color: rgba(0,0,0,0.25);
+}
+
+#message-form{
+    width: 100%;
+    position: absolute;
+    display: flex;
+    bottom: 0;
+    padding: 15px;
+    border-top: 2px solid var(--body);
+    background-color: var(--light-gray);
+}
+
+#message-form > form{
+    position: static;
+}
+
+#message{
+    margin-right: 5px;
+}
+
+.message-left{
+    display: flex;
+    flex-direction: row;
+}
+
+.message-right{
+    display: flex;
+    flex-direction: row-reverse;
+    text-align: left;
+}
+
+.conv-avatar{
+    height: 3em;
+    margin: 15px;
+}
+
+.author-left, .author-right{
+    font-weight: bold;
+}
+
+.author-right{
+    text-align: right;
+}
+
+.message{
+    width: 90%;
+}
+
+/* @media only screen and (min-width:800px) {
+    .message{
+        width: 80%;
+    }
+} */
+
+.message-right > div, .message-left > div{
+    width:100%;
+}
+
+.message-right > div > .message{
+    text-align: right;
+    margin-left: auto;
+}
+
+.conversation-date-separator{
+    margin-top: 15px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid var(--body);
+    text-align: center;
+}
+
+.conversation-date{
+    position: relative;
+    top: 10px;
+    margin: 0 auto;
+    padding: 0 10px;
+    font-weight: bold;
+    font-size: 0.75em;
+    background-color: var(--white);
+}
+
+.conversation{
+    overflow-y: auto;
+    max-height: calc(100% - (.375rem + 0.375rem + 2px) - (1.5em + .75rem) - (20px));
+    width: 100%;
+    overflow-x: hidden;
+    padding-bottom: 1rem;
+}
+
+a{
+    color: var(--primary) !important;
+    word-break: break-all;
+}
+
+p{
+    margin-bottom: 0 !important;
+}

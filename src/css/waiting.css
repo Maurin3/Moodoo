@@ -1,0 +1,139 @@
+/* Spin */
+#spin_wait {
+    animation-name: spin;
+    animation-duration: 2500ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; 
+}
+
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+
+/* Skeleton */
+.conversation-element-load{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 75px;
+    padding: 5%;
+}
+
+.author-load{
+    width: 100px;
+    height: 10px;
+    margin-bottom: 5px;
+    animation-name: aniHorizontal;
+    animation-duration: 3.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    background-color: var(--white) !important;
+    border-radius: 15px 15px 15px 15px;
+    background-size: 50%;
+}
+
+.avatar-load{
+    width: 50px;
+    background-color: var(--white);
+    border-radius: 100%; 
+
+    width: 50px !important;
+    height: 50px;
+    animation-name: aniHorizontal;
+    animation-duration: 3.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    background-color: var(--white) !important; 
+    background-size: 50%;
+}
+
+.conv-avatar-load{
+    width: 50px;
+    background-color: var(--white);
+    border-radius: 100%; 
+
+    height: 3em;
+    margin: 15px;
+
+    width: 3em;
+    height: 3em;
+    animation-name: aniHorizontal;
+    animation-duration: 3.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    background-color: var(--white) !important; 
+    background-size: 50%;
+}
+
+.date-load{
+    width: 75px;
+    height: 10px;
+    margin-top: 5px;
+    animation-name: aniHorizontal;
+    animation-duration: 3.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    background-color: var(--white) !important;
+    border-radius: 15px 15px 15px 15px;
+    background-size: 50%;
+}
+
+.author-left-load, .author-right-load{
+    width: 150px;
+    height: 10px;
+    animation-name: aniHorizontal;
+    animation-duration: 3.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    background-color: var(--white) !important; 
+    border-radius: 15px 15px 15px 15px;
+    background-size: 50%;
+}
+
+.author-right-load{
+    margin-left:auto; 
+    margin-right:0;
+}
+
+.message-load{
+    width: 500px;
+    height: 10px;
+    margin-top: 5px;
+    animation-name: aniHorizontal;
+    animation-duration: 3.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    background-color: var(--white) !important;
+    border-radius: 15px 15px 15px 15px;
+    background-size: 50%;
+}
+
+.message-left-load{
+    display: flex;
+    flex-direction: row;
+}
+
+.message-right-load{
+    display: flex;
+    flex-direction: row-reverse;
+    text-align: left;
+}
+
+@keyframes aniHorizontal {
+    0% {
+        background-color: var(--light-gray)
+    }
+  
+    50% {
+        background-color: var(--wait)
+    }
+
+    100% {
+        background-color: var(--light-gray)
+    }
+  }

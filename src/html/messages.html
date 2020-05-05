@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Moodoo</title>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" href="../css/app.css"/>
+        <link rel="stylesheet" href="../css/messages.css"/>
+        <link rel="stylesheet" href="../css/waiting.css"/>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    </head>
+    <body>
+        <script>
+            require('../../dist/messages.js');
+        </script>
+        <div id="layout" class="layout">
+            <div class="conversation-list full-height" id="conv-list">
+                <div class="conversation-element-load">
+                    <img class="avatar-load"/>
+                    <div class="message-info">
+                        <div class="author-load"></div>
+                        <div class="date-load"></div>
+                    </div>
+                </div>
+                <div class="conversation-element-load">
+                    <img class="avatar-load"/>
+                    <div class="message-info">
+                        <div class="author-load"></div>
+                        <div class="date-load"></div>
+                    </div>
+                </div>
+                <div class="conversation-element-load">
+                    <img class="avatar-load"/>
+                    <div class="message-info">
+                        <div class="author-load"></div>
+                        <div class="date-load"></div>
+                    </div>
+                </div>
+                <div class="conversation-element-load">
+                    <img class="avatar-load"/>
+                    <div class="message-info">
+                        <div class="author-load"></div>
+                        <div class="date-load"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="conversation-panel white-bg full-height">
+                <div class="conversation" id="conv">
+                    <div class="conversation-date-separator">
+                        <span class="conversation-date">            -             </span>
+                    </div>
+                    <div class="message-left-load">
+                        <img class="conv-avatar-load"/>
+                        <div>
+                            <div class="author-left-load mt-3 mb-2"></div>
+                            <div class="message-load"></div>
+                            <div class="message-load"></div>
+                        </div>
+                    </div>
+                    <div class="message-right-load">
+                        <img class="conv-avatar-load"/>
+                        <div>
+                            <div class="author-right-load mt-3 mb-2"></div>
+                            <div class="message-load"></div>
+                            <div class="message-load"></div>
+                        </div>
+                    </div>
+                    <div class="message-left-load">
+                        <img class="conv-avatar-load"/>
+                        <div>
+                            <div class="author-left-load mt-3 mb-2"></div>
+                            <div class="message-load"></div>
+                            <div class="message-load"></div>
+                        </div>
+                    </div>
+                    <div class="message-right-load">
+                        <img class="conv-avatar-load"/>
+                        <div>
+                            <div class="author-right-load mt-3 mb-2"></div>
+                            <div class="message-load"></div>
+                            <div class="message-load"></div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <form method="post" id="message-form" onSubmit="JavaScript:submitMessage(event)">
+                        <input class="form-control" type="text" name="message" id="message" placeholder="Your message here..."/>
+                        <button type="submit" class="btn btn-primary" id="send-message">Send</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>
