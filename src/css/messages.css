@@ -46,6 +46,8 @@
     width: 50px;
     background-color: var(--light-gray);
     border-radius: 100%; 
+    background-position: center center;
+    background-repeat: no-repeat;
 }
 
 .conversation-element:hover{

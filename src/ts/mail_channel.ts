@@ -32,14 +32,14 @@ export default class MailChannel {
         this.id = id;
         this.name = name;
         this.lastDate = new Date(lastDate);
-        this.setImage();
+        /* this.setImage(); */
     }
 
     setMailMessage(mailMessages: Array<MailMessage>){
         this.mailMessages = mailMessages;
     }
 
-    private setImage(){
+    /* private setImage(){
         var self = this;
         function callback(error: jayson.JSONRPCError, response: any): void{
             if (error) throw error;
@@ -56,5 +56,5 @@ export default class MailChannel {
             }
         }
         connection.request(callback, 'res.users', 'search_read', [['name', '=', self.name]], ['image_128']);
-    }
+    } */
 }

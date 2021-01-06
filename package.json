@@ -11,11 +11,14 @@
         "watch": "tsc -w",
         "start": "tsc && electron ."
     },
+    "engines": {
+        "node": ">=12"
+    },
     "devDependencies": {
-        "electron": "^7.2.3",
-        "jayson": "^3.3.0",
+        "electron": "^7.3.3",
+        "jayson": "^3.4.4",
         "tslint": "^5.19.0",
-        "typescript": "^3.7.4"
+        "typescript": "^3.9.7"
     },
     "dependencies": {
         "tsc": "^1.20150623.0"
