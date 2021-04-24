@@ -66,6 +66,7 @@ export default class Connection{
                 method,
             ]
         }
+        debugger;
         var i = params['args'].length;
         for (let arg of args){
             params['args'][i] = arg;

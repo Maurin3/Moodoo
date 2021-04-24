@@ -15,6 +15,7 @@
         "node": ">=12"
     },
     "devDependencies": {
+        "@types/jquery": "^3.5.5",
         "electron": "^7.3.3",
         "jayson": "^3.4.4",
         "tslint": "^5.19.0",

@@ -1,4 +1,5 @@
 import { remote, ipcRenderer } from 'electron';
+import * as $ from "jquery";
 import Connection from './connection';
 import Store from './store';
 import MailChannel from './mail_channel';
@@ -39,7 +40,9 @@ var connection = new Connection('request');
 window.addEventListener('load', () => {
     document.getElementById('send-message').addEventListener('submit', sendMessage);
     document.getElementById('message-form').addEventListener('keypress', sendMessage);
+    // NOTE: Use controllers ?-> https://github.com/odoo/odoo/blob/14.0/addons/mail/controllers/main.py#L257
     connection.request(callbackChannels, 'mail.channel', 'search_read', [['is_member', '=', true], ['channel_type', '=', 'chat'], ['channel_message_ids', '!=', false]], ['id', 'name', 'write_date', 'image_128']);
+    // connection.request(callbackChannels, '/mail/init_messaging');
     //setInterval(receiveMessage, 3600);
 });
 
